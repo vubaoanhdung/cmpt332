@@ -1,0 +1,1655 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Nov 19 14:49:34 2021
+
+# Variables
+
+# makefile (from 'Makefile', line 54)
+AS = $(TOOLPREFIX)gas
+# environment
+LC_ALL = C
+# environment
+PHRED_PARAMETER_FILE = /student/binfo/databases/PhredPar/phredpar.dat
+# makefile (from 'Makefile', line 156)
+QEMUGDB = $(shell if $(QEMU) -help | grep -q '^-gdb'; then echo "-gdb tcp::$(GDBPORT)"; else echo "-s -p $(GDBPORT)"; fi)
+# makefile (from 'Makefile', line 90)
+ULIB = $U/ulib.o $U/usys.o $U/printf.o $U/umalloc.o
+# environment
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/remote/node_modules
+# makefile (from 'Makefile', line 154)
+GDBPORT = $(shell expr `id -u` % 5000 + 25000)
+# environment
+define BASH_FUNC_scl%%
+() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+endef
+# environment
+VSCODE_CWD = /student/bav965
+# environment
+MODULES_CMD = /usr/share/Modules/libexec/modulecmd.tcl
+# environment
+MODULEPATH_modshare = /usr/share/modulefiles:1:/usr/share/Modules/modulefiles:1:/etc/modulefiles:1
+# default
+MAKE_COMMAND := make
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 1)
+K = kernel
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /student/bav965/cmpt332/xv6-riscv
+# environment
+HOST = tux7
+# environment
+UMLET_HOME = /usr/local/UMLet
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = tux7
+# environment
+MAIL = /var/spool/mail/bav965
+# environment
+XDG_DATA_DIRS = /student/bav965/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+QTINC = /usr/lib64/qt-3.3/include
+# environment
+MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+SSH_ASKPASS = /usr/libexec/openssh/lxqt-openssh-askpass
+# environment
+LANG = C
+# environment
+GUESTFISH_OUTPUT = \e[0m
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# environment
+GUESTFISH_INIT = \e[1;34m
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /student/bav965/cmpt332/xv6-riscv
+# environment
+define BASH_FUNC_module%%
+() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+endef
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PLPLOT_LIB = /student/binfo/EMBOSS-6.0.1/plplot/lib
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'user/zombie.d', line 1)
+MAKEFILE_LIST := Makefile kernel/bio.d kernel/console.d kernel/exec.d kernel/file.d kernel/fs.d kernel/kalloc.d kernel/log.d kernel/main.d kernel/pipe.d kernel/plic.d kernel/printf.d kernel/proc.d kernel/sleeplock.d kernel/spinlock.d kernel/start.d kernel/string.d kernel/syscall.d kernel/sysfile.d kernel/sysproc.d kernel/trap.d kernel/uart.d kernel/virtio_disk.d kernel/vm.d user/cat.d user/cmpt332.d user/echo.d user/forktest.d user/grep.d user/grind.d user/init.d user/initcode.d user/ipc_program.d user/kill.d user/ln.d user/ls.d user/mkdir.d user/printf.d user/rm.d user/sh.d user/stressfs.d user/test.d user/ulib.d user/umalloc.d user/usertests.d user/usys.d user/wc.d user/zombie.d
+# environment
+BIBINPUTS = .:/student/bav965/tex/bib:
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+KRB5CCNAME = DIR:/run/user/763501/krb5cc_b2OSXJ
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /usr/man:/usr/local/man:/usr/share/man:/cs/man
+# environment
+MODULEPATH = /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/763501/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+define BASH_FUNC_ml%%
+() {  module ml "$@"
+}
+endef
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile (from 'Makefile', line 4)
+OBJS = $K/entry.o $K/start.o $K/console.o $K/printf.o $K/uart.o $K/kalloc.o $K/spinlock.o $K/string.o $K/main.o $K/vm.o $K/proc.o $K/swtch.o $K/trampoline.o $K/trap.o $K/syscall.o $K/sysproc.o $K/bio.o $K/fs.o $K/log.o $K/sleeplock.o $K/file.o $K/pipe.o $K/exec.o $K/sysfile.o $K/kernelvec.o $K/plic.o $K/virtio_disk.o
+# makefile (from 'Makefile', line 2)
+U = user
+# environment
+CN3D_HOME = /student/binfo/Cn3D-4.1
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 57)
+OBJDUMP = $(TOOLPREFIX)objdump
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'Makefile', line 118)
+UPROGS = $U/_cat $U/_echo $U/_forktest $U/_grep $U/_init $U/_kill $U/_ln $U/_ls $U/_mkdir $U/_rm $U/_sh $U/_stressfs $U/_usertests $U/_grind $U/_wc $U/_zombie $U/_cmpt332 $U/_test $U/_ipc_program 
+# environment
+PATH = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/bin:/usr/bin:/usr/local/bin:/student/binfo/bin:.
+# environment
+QTDIR = /usr/lib64/qt-3.3
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+MODULESHOME = /usr/share/Modules
+# automatic
+^F = $(notdir $^)
+# environment
+LOADEDMODULES = 
+# environment
+SSH_CLIENT = 108.60.173.129 36152 22
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+PRINTER = UNKNOWN
+# automatic
+?F = $(notdir $?)
+# environment
+GUESTFISH_PS1 = \[\e[1;32m\]><fs>\[\e[0;31m\] 
+# environment
+QTLIB = /usr/lib64/qt-3.3/lib
+# environment
+KDEDIRS = /usr
+# automatic
++F = $(notdir $+)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin/helpers/browser.sh
+# environment
+OS = Linux
+# environment
+LOGNAME = bav965
+# makefile
+.DEFAULT_GOAL := kernel/kernel
+# environment
+define BASH_FUNC_switchml%%
+() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+endef
+# makefile (from 'Makefile', line 51)
+QEMU = qemu-system-riscv64
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = vi
+# environment
+USER = bav965
+# default
+MAKE_VERSION := 4.3
+# environment
+CONSED_HOME = /student/binfo
+# 'override' directive
+.SHELLSTATUS := 1
+# makefile (from 'Makefile', line 74)
+LDFLAGS = -z max-page-size=4096
+# environment
+which_declare = declare -f
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+TEXINPUTS = .:/student/bav965/tex/inputs:
+# environment
+CVS_RSH = ssh
+# environment
+VSCODE_AGENT_FOLDER = /student/bav965/.vscode-server
+# environment
+_ = /bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/763501
+# makefile (from 'Makefile', line 68)
+CFLAGS = -Wall -Werror -O -fno-omit-frame-pointer -ggdb -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. $(shell $(CC) -fno-stack-protector -E -x c /dev/null >/dev/null 2>&1 && echo -fno-stack-protector) -fno-pie -no-pie
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/763501/vscode-ipc-7f78ae7a-16d6-4b5d-b6c2-7e7004541460.sock
+# makefile (from 'Makefile', line 160)
+CPUS := 3
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
+# environment
+HOME = /student/bav965
+# makefile (from 'Makefile', line 35)
+TOOLPREFIX = /student/cmpt332/riscv/bin/riscv64-unknown-elf-
+# environment
+XDG_SESSION_ID = c6317
+# environment
+SMLNJ_HOME = /usr/local
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 55)
+LD = $(TOOLPREFIX)ld
+# environment
+GUESTFISH_RESTORE = \e[0m
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 165)
+QEMUOPTS = -machine virt -bios none -kernel $K/kernel -m 128M -smp $(CPUS) -nographic -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
+# makefile (from 'Makefile', line 53)
+CC = $(TOOLPREFIX)gcc
+# makefile (from 'Makefile', line 56)
+OBJCOPY = $(TOOLPREFIX)objcopy
+# environment
+SSH_CONNECTION = 108.60.173.129 36152 128.233.18.93 22
+# variable set hash-table stats:
+# Load=127/1024=12%, Rehash=0, Collisions=8/379=2%
+
+# Pattern-specific Variable Values
+
+ 
+# No pattern-specific variable values.
+
+# Directories
+
+# kernel (device 59, inode 124663327): 101 files, no impossibilities.
+# . (device 59, inode 124588700): 16 files, no impossibilities.
+# user (device 59, inode 124663395): 137 files, no impossibilities.
+
+# 254 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+_%: %.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+#  recipe to execute (from 'Makefile', line 93):
+	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o $@ $^
+	$(OBJDUMP) -S $@ > $*.asm
+	$(OBJDUMP) -t $@ | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $*.sym
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+user/cat.o: user/cat.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/wc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/virtio_disk.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:59.255967914
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/grind.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.295063526
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/ipc_program.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/proc.o: kernel/proc.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/log.o: kernel/log.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/spinlock.h kernel/sleeplock.h kernel/fs.h kernel/buf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/sh.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/proc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/string.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_cmpt332:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/printf.o: kernel/printf.c /student/cmpt332/riscv/lib/gcc/riscv64-unknown-elf/11.1.0/include/stdarg.h kernel/types.h kernel/param.h kernel/spinlock.h kernel/sleeplock.h kernel/fs.h kernel/file.h kernel/memlayout.h kernel/riscv.h kernel/defs.h kernel/proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/rm.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.435071225
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/trap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/fcntl.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/usertests.o: user/usertests.c kernel/param.h kernel/types.h kernel/stat.h user/user.h kernel/fs.h kernel/fcntl.h kernel/syscall.h kernel/memlayout.h kernel/riscv.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/bio.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.607973898
+#  File has been updated.
+#  Successfully updated.
+
+user/wc.o: user/wc.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/spinlock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/uart.o: kernel/uart.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/grep.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.963075451
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_echo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/mkdir.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/virtio.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/forktest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ln.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.183073482
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_kill:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/sysfile.o: kernel/sysfile.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/stat.h kernel/spinlock.h kernel/proc.h kernel/fs.h kernel/sleeplock.h kernel/file.h kernel/fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/exec.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:59.02797002
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/usertests.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.095065315
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/ln.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.gdbinit.tmpl-riscv:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/console.o: kernel/console.c /student/cmpt332/riscv/lib/gcc/riscv64-unknown-elf/11.1.0/include/stdarg.h kernel/types.h kernel/param.h kernel/spinlock.h kernel/sleeplock.h kernel/fs.h kernel/file.h kernel/memlayout.h kernel/riscv.h kernel/defs.h kernel/proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/init.o: user/init.c kernel/types.h kernel/stat.h kernel/spinlock.h kernel/sleeplock.h kernel/fs.h kernel/file.h user/user.h kernel/fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/uart.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/forktest.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.875076239
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/cmpt332.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/virtio_disk.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_stressfs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/kill.o: user/kill.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/initcode.o: user/initcode.S kernel/syscall.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/trap.o: kernel/trap.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/initcode: user/initcode.S
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 82):
+	$(CC) $(CFLAGS) -march=rv64g -nostdinc -I. -Ikernel -c $U/initcode.S -o $U/initcode.o
+	$(LD) $(LDFLAGS) -N -e start -Ttext 0 -o $U/initcode.out $U/initcode.o
+	$(OBJCOPY) -S -O binary $U/initcode.out $U/initcode
+	$(OBJDUMP) -S $U/initcode.o > $U/initcode.asm
+ 
+
+.PRECIOUS: %.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/test.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.615060659
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+_init:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/usys.S: user/usys.pl
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 98):
+	perl $U/usys.pl > $U/usys.S
+
+# Not a target:
+user/_grep:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/sh.o: user/sh.c kernel/types.h user/user.h kernel/fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ls.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.275072658
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 11:07:43.783007424
+#  File has been updated.
+#  Successfully updated.
+
+kernel/vm.o: kernel/vm.c kernel/param.h kernel/types.h kernel/memlayout.h kernel/elf.h kernel/riscv.h kernel/defs.h kernel/fs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/sleeplock.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.843971719
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/kill.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.107074161
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/log.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.799972125
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/riscv.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/exec.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/printf.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.505536316
+#  File has been updated.
+#  Successfully updated.
+
+fs.img: mkfs/mkfs README user/_cat user/_echo user/_forktest user/_grep user/_init user/_kill user/_ln user/_ls user/_mkdir user/_rm user/_sh user/_stressfs user/_usertests user/_grind user/_wc user/_zombie user/_cmpt332 user/_test user/_ipc_program
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 141):
+	mkfs/mkfs fs.img README $(UPROGS)
+
+# Not a target:
+kernel/proc.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/plic.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/proc.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 14:20:58.501359809
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_grind:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/cat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/spinlock.o: kernel/spinlock.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/riscv.h kernel/proc.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/ln.o: user/ln.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/umalloc.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.707077743
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_zombie:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 146):
+	rm -f *.tex *.dvi *.idx *.aux *.log *.ind *.ilg \
+	*/*.o */*.d */*.asm */*.sym \
+	$U/initcode $U/initcode.out $K/kernel fs.img \
+	mkfs/mkfs .gdbinit \
+        $U/usys.S \
+	$(UPROGS)
+
+# Not a target:
+kernel/log.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/vm.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.769533875
+#  File has been updated.
+#  Successfully updated.
+
+kernel/main.o: kernel/main.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/rm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/uart.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.557535835
+#  File has been updated.
+#  Successfully updated.
+
+user/cmpt332.o: user/cmpt332.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/ls.o: user/ls.c kernel/types.h kernel/stat.h user/user.h kernel/fs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/usys.o: user/usys.S user/usys.S kernel/syscall.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 101):
+	$(CC) $(CFLAGS) -c -o $U/usys.o $U/usys.S
+
+# Not a target:
+kernel/start.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/fs.o: kernel/fs.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/stat.h kernel/spinlock.h kernel/proc.h kernel/sleeplock.h kernel/fs.h kernel/buf.h kernel/file.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mkfs/mkfs: mkfs/mkfs.c kernel/fs.h kernel/param.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 110):
+	gcc -Werror -Wall -I. -o mkfs/mkfs mkfs/mkfs.c
+
+user/rm.o: user/rm.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/start.o: kernel/start.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/virtio_disk.o: kernel/virtio_disk.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/sleeplock.h kernel/fs.h kernel/buf.h kernel/virtio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ls.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/stressfs.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.671069112
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/sysfile.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/string.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:18:37.965748727
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/types.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/init.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/plic.o: kernel/plic.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/test.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+user/echo.o: user/echo.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/pipe.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/sysproc.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.555974379
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kernel.ld:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/printf.o: user/printf.c kernel/types.h kernel/stat.h user/user.h /student/cmpt332/riscv/lib/gcc/riscv64-unknown-elf/11.1.0/include/stdarg.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ipc_program.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 14:20:58.797357136
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/entry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/pipe.o: kernel/pipe.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/spinlock.h kernel/proc.h kernel/fs.h kernel/sleeplock.h kernel/file.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/param.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_ls:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/spinlock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/kalloc.o: kernel/kalloc.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/riscv.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/usys.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 13:57:59.489860587
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/cmpt332.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.539061341
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kalloc.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.597535465
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/grind.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/grind.o: user/grind.c kernel/param.h kernel/types.h kernel/stat.h user/user.h kernel/fs.h kernel/fcntl.h kernel/syscall.h kernel/memlayout.h kernel/riscv.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/bio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/fs.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.731972753
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_usertests:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/echo.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.791076991
+#  File has been updated.
+#  Successfully updated.
+
+kernel/bio.o: kernel/bio.c kernel/types.h kernel/param.h kernel/spinlock.h kernel/sleeplock.h kernel/riscv.h kernel/defs.h kernel/fs.h kernel/buf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/kalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/trampoline.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/cat.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.531079319
+#  File has been updated.
+#  Successfully updated.
+
+user/forktest.o: user/forktest.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+kernel/file.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/vm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/trap.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.435975487
+#  File has been updated.
+#  Successfully updated.
+
+user/stressfs.o: user/stressfs.c kernel/types.h kernel/stat.h user/user.h kernel/fs.h kernel/fcntl.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/init.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.035074806
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/ulib.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.595078746
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/umalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/usys.pl:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/zombie.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.459062057
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/pipe.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.963970611
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/fs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/file.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.903971165
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/initcode.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/zombie.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/ulib.o: user/ulib.c kernel/types.h kernel/stat.h kernel/fcntl.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_ipc_program:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/buf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/test.o: user/test.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/stressfs.c:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/syscall.o: kernel/syscall.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/syscall.h kernel/defs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/fs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/exec.o: kernel/exec.c kernel/types.h kernel/param.h kernel/memlayout.h kernel/riscv.h kernel/spinlock.h kernel/proc.h kernel/defs.h kernel/elf.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/mkdir.o: user/mkdir.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/string.o: kernel/string.c kernel/types.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_cat:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/sleeplock.o: kernel/sleeplock.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/proc.h kernel/sleeplock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mkfs/mkfs.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/spinlock.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.645535022
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/date.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu: kernel/kernel fs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 168):
+	$(QEMU) $(QEMUOPTS)
+
+# Not a target:
+user/_wc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+%.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/initcode.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 13:57:59.177863436
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/plic.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:59.183968579
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/printf.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:37.655078209
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kernelvec.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/stat.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_rm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/sysfile.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:59.131969059
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/student/cmpt332/riscv/lib/gcc/riscv64-unknown-elf/11.1.0/include/stdarg.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:24:58.49197497
+#  File has been updated.
+#  Successfully updated.
+
+kernel/kernel: kernel/entry.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/kalloc.o kernel/spinlock.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o kernel/kernel.ld user/initcode
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 77):
+	$(LD) $(LDFLAGS) -T $K/kernel.ld -o $K/kernel $(OBJS) 
+	$(OBJDUMP) -S $K/kernel > $K/kernel.asm
+	$(OBJDUMP) -t $K/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > $K/kernel.sym
+
+user/umalloc.o: user/umalloc.c kernel/types.h kernel/stat.h user/user.h kernel/param.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+qemu-gdb: kernel/kernel .gdbinit fs.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 174):
+	@echo "*** Now run 'gdb' in another window." 1>&2
+	$(QEMU) $(QEMUOPTS) -S $(QEMUGDB)
+
+# Not a target:
+kernel/defs.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/ipc_program.o: user/ipc_program.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/start.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.389537388
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/elf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/kill.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/echo.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/grep.o: user/grep.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/syscall.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/printf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/file.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/user.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/usertests.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/_mkdir:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/printf.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/ulib.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/sh.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:38.571070008
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/_init:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/sleeplock.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/mkdir.d:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-11-18 15:23:38.359071906
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/console.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.449536833
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/memlayout.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+README:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/console.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+user/_forktest: user/forktest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 104):
+	# forktest has less library code linked in - needs to be small
+	# in order to be able to max out the proc table.
+	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o $U/_forktest $U/forktest.o $U/ulib.o $U/usys.o
+	$(OBJDUMP) -S $U/_forktest > $U/forktest.asm
+
+# Not a target:
+kernel/sleeplock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tags: kernel/entry.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/kalloc.o kernel/spinlock.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o _init
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 88):
+	etags *.S *.c
+
+kernel/sysproc.o: kernel/sysproc.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/date.h kernel/param.h kernel/memlayout.h kernel/spinlock.h kernel/proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/swtch.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+user/grep.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/sysproc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-19 13:22:09.677534726
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+user/wc.d:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-18 15:23:39.391062665
+#  File has been updated.
+#  Successfully updated.
+
+.gdbinit: .gdbinit.tmpl-riscv
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 171):
+	sed "s/:1234/:$(GDBPORT)/" < $^ > $@
+
+user/zombie.o: user/zombie.c kernel/types.h kernel/stat.h user/user.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel/file.o: kernel/file.c kernel/types.h kernel/riscv.h kernel/defs.h kernel/param.h kernel/fs.h kernel/spinlock.h kernel/sleeplock.h kernel/file.h kernel/stat.h kernel/proc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=204/1024=20%, Rehash=0, Collisions=70/702=10%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 447 / storage = 4879 B / avg = 10 B
+# current buf: size = 8162 B / used = 4879 B / count = 447 / avg = 10 B
+
+# strcache performance: lookups = 896 / hit rate = 50%
+# hash-table stats:
+# Load=447/8192=5%, Rehash=0, Collisions=24/896=3%
+# Finished Make data base on Fri Nov 19 14:49:34 2021
+
+ 

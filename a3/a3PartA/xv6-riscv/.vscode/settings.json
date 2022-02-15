@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "types.h": "c",
+        "*.ipp": "c",
+        "semaphore": "c",
+        "stop_token": "c",
+        "mutex": "c"
+    }
+}

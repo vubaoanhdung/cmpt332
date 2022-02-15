@@ -1,0 +1,439 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Nov 19 14:24:56 2021
+
+# Variables
+
+# environment
+LC_ALL = C
+# environment
+PHRED_PARAMETER_FILE = /student/binfo/databases/PhredPar/phredpar.dat
+# environment
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/remote/node_modules
+# environment
+define BASH_FUNC_scl%%
+() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+endef
+# environment
+VSCODE_CWD = /student/bav965
+# environment
+MODULES_CMD = /usr/share/Modules/libexec/modulecmd.tcl
+# environment
+MODULEPATH_modshare = /usr/share/modulefiles:1:/usr/share/Modules/modulefiles:1:/etc/modulefiles:1
+# default
+MAKE_COMMAND := make
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /student/bav965/cmpt332/cmpt332-assignments/assignment3/a3
+# environment
+HOST = tux7
+# environment
+UMLET_HOME = /usr/local/UMLet
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = tux7
+# environment
+MAIL = /var/spool/mail/bav965
+# environment
+XDG_DATA_DIRS = /student/bav965/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+QTINC = /usr/lib64/qt-3.3/include
+# environment
+MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+SSH_ASKPASS = /usr/libexec/openssh/lxqt-openssh-askpass
+# environment
+LANG = C
+# environment
+GUESTFISH_OUTPUT = \e[0m
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# environment
+GUESTFISH_INIT = \e[1;34m
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /student/bav965/cmpt332/cmpt332-assignments/assignment3/a3
+# environment
+define BASH_FUNC_module%%
+() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+endef
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PLPLOT_LIB = /student/binfo/EMBOSS-6.0.1/plplot/lib
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+BIBINPUTS = .:/student/bav965/tex/bib:
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+KRB5CCNAME = DIR:/run/user/763501/krb5cc_b2OSXJ
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /usr/man:/usr/local/man:/usr/share/man:/cs/man
+# environment
+MODULEPATH = /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/763501/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+define BASH_FUNC_ml%%
+() {  module ml "$@"
+}
+endef
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# environment
+CN3D_HOME = /student/binfo/Cn3D-4.1
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/bin:/usr/bin:/usr/local/bin:/student/binfo/bin:.
+# environment
+QTDIR = /usr/lib64/qt-3.3
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+MODULESHOME = /usr/share/Modules
+# automatic
+^F = $(notdir $^)
+# environment
+LOADEDMODULES = 
+# environment
+SSH_CLIENT = 108.60.173.129 36152 22
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+PRINTER = UNKNOWN
+# automatic
+?F = $(notdir $?)
+# environment
+GUESTFISH_PS1 = \[\e[1;32m\]><fs>\[\e[0;31m\] 
+# environment
+QTLIB = /usr/lib64/qt-3.3/lib
+# environment
+KDEDIRS = /usr
+# automatic
++F = $(notdir $+)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = /student/bav965/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin/helpers/browser.sh
+# environment
+OS = Linux
+# environment
+LOGNAME = bav965
+# makefile
+.DEFAULT_GOAL := all
+# environment
+define BASH_FUNC_switchml%%
+() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+endef
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = vi
+# environment
+USER = bav965
+# default
+MAKE_VERSION := 4.3
+# environment
+CONSED_HOME = /student/binfo
+# environment
+which_declare = declare -f
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+TEXINPUTS = .:/student/bav965/tex/inputs:
+# environment
+CVS_RSH = ssh
+# environment
+VSCODE_AGENT_FOLDER = /student/bav965/.vscode-server
+# environment
+_ = /bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/763501
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/763501/vscode-ipc-3fd6fe73-0743-4e38-8b69-9ec16c0662cc.sock
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
+# environment
+HOME = /student/bav965
+# environment
+XDG_SESSION_ID = c6317
+# environment
+SMLNJ_HOME = /usr/local
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+GUESTFISH_RESTORE = \e[0m
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+SSH_CONNECTION = 108.60.173.129 36152 128.233.18.93 22
+# variable set hash-table stats:
+# Load=108/1024=11%, Rehash=0, Collisions=6/139=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 59, inode 124584137): 8 files, no impossibilities.
+
+# 8 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+test_program.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-15 21:54:59.7956871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-15 20:33:52.864285985
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	rm -f *.o *.a test_program app
+
+# Not a target:
+petgroomsynch.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-15 21:07:45.58166992
+#  File has been updated.
+ 
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: test_program
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+test_program: test_program.c petgroomsynch.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2021-11-15 21:54:21.040042367
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := test_program
+# automatic
+# * := 
+# automatic
+# < := test_program.c
+# automatic
+# + := test_program.c petgroomsynch.c
+# automatic
+# % := 
+# automatic
+# ^ := test_program.c petgroomsynch.c
+# automatic
+# ? := test_program.c
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 13):
+	gcc -Wall -Wextra -o test_program test_program.c petgroomsynch.c -pthread
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/27=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 14 / storage = 131 B / avg = 9 B
+# current buf: size = 8162 B / used = 131 B / count = 14 / avg = 9 B
+
+# strcache performance: lookups = 29 / hit rate = 51%
+# hash-table stats:
+# Load=14/8192=0%, Rehash=0, Collisions=0/29=0%
+# Finished Make data base on Fri Nov 19 14:24:56 2021
+
+ 

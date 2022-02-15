@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/damon/Documents/USASK/4thYear/fall/cmpt332/new/cmpt332Fall2021/assignments'
+make: Leaving directory '/home/damon/Documents/USASK/4thYear/fall/cmpt332/new/cmpt332Fall2021/assignments'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 

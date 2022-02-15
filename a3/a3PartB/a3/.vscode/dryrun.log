@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/student/bav965/cmpt332/cmpt332-assignments/assignment3/a3'
+gcc -Wall -Wextra -o test_program test_program.c petgroomsynch.c -pthread
+make: Leaving directory '/student/bav965/cmpt332/cmpt332-assignments/assignment3/a3'
+ 
